@@ -34,7 +34,7 @@ for (const record of records) {
   // Go to dashboard
 await page.goto('https://mnscat1.mnscat.lott/admin/portal.do#');
   await page.locator('input[name="username"]').fill('administrator');
-  await page.locator('input[name="password"]').fill('welcome');
+  await page.locator('input[name="password"]').fill('password');
   await page.getByRole('button', { name: 'Go' }).click();
   await page.getByRole('button', { name: 'Continue' }).click();
   
@@ -48,5 +48,6 @@ await page.goto('https://mnscat1.mnscat.lott/admin/portal.do#');
   await page.waitForTimeout(5000);
 
 })
+
 
 }
